@@ -1,0 +1,3 @@
+case_id,wind_speed_mps,frequency_GHz,theta_i_deg,polarization
+example_TE,6,4,50,TE
+example_TM,6,4,50,TM

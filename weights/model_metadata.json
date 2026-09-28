@@ -1,0 +1,55 @@
+{
+  "model": "DS+PCA",
+  "version": "1.0.0",
+  "k": 3,
+  "ridge": 0.001,
+  "envelope_parameters": 7,
+  "checkpoint": "ds_pca_final.npz",
+  "checkpoint_sha256": "ba385f4bf10efd6e3b250dcbfcebb56749c57e53afc838f8dd63e84c38458917",
+  "source_checkpoint_sha256": "afa0c025498028987c8ec5dcc8b569722d072ec4553c8ed1d89f5e1a00bb5538",
+  "refitted": false,
+  "training_setting": "known_conditions",
+  "training_samples": 137,
+  "training_conditions": 46,
+  "training_surfaces": 9,
+  "training_realisations": [
+    "R1",
+    "R2",
+    "R3"
+  ],
+  "fitting_excludes_realisations": [
+    "R4",
+    "R5"
+  ],
+  "grid_shape": [
+    91,
+    360
+  ],
+  "training_wind_speed_mps": [
+    3,
+    6,
+    9
+  ],
+  "training_frequency_GHz": [
+    2,
+    4,
+    6
+  ],
+  "training_incidence_zenith_deg": [
+    20,
+    50,
+    70
+  ],
+  "polarisations": [
+    "TE",
+    "TM"
+  ],
+  "output": "Linear scattering intensity; normalisation follows the manuscript.",
+  "verification": {
+    "reference": "Original fitted DS+PCA, K=3, ridge=0.001",
+    "samples": 92,
+    "max_absolute_difference_dB": 0.0,
+    "relative_tolerance": 1e-10,
+    "passed": true
+  }
+}
